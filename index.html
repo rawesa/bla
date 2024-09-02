@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Stars Elmas Gönderimi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="brawl-stars-logo.png" alt="Brawl Stars Logo" class="logo">
+            <h1>Brawl Stars Elmas Gönderimi</h1>
+        </header>
+        <main>
+            <div class="form-container">
+                <div class="input-group">
+                    <label for="username">Brawl Stars İsminizi Girin:</label>
+                    <input type="text" id="username" placeholder="Kullanıcı Adı">
+                </div>
+                <button onclick="findUser()">Kullanıcıyı Bul</button>
+                
+                <div id="elmas-options" class="hidden">
+                    <div class="input-group">
+                        <label for="elmas">Göndermek İstediğiniz Elmas Miktarını Seçin:</label>
+                        <select id="elmas">
+                            <option value="30">30 Elmas</option>
+                            <option value="80">80 Elmas</option>
+                            <option value="180">180 Elmas</option>
+                            <option value="360">360 Elmas</option>
+                            <option value="950">950 Elmas</option>
+                            <option value="2000">2000 Elmas</option>
+                        </select>
+                    </div>
+                    <button onclick="sendDiamonds()">Gönder</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Brawl Stars Elmas Gönderimi</p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
